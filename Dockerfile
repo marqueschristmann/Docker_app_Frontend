@@ -1,8 +1,10 @@
 FROM node:14-alpine
 
-RUN git clone
+RUN apk update && apk add git
 
-WORKDIR /meupjt/frontend/
+RUN git clone https://github.com/marqueschristmann/Docker_app_Frontend.git
+
+WORKDIR /Docker_app_Frontend/
 
 
 # add '/app/node_modules/.bin' to $PATH
