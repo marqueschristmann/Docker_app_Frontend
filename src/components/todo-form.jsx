@@ -25,7 +25,7 @@ const TodoForm = ({ saveTodo }) => {
   return (
     <Form>
       <FormGroup>
-        <Label for="title"><Titulo></Titulo></Label>
+        <Label for="title">Titulo</Label>
         <Input
           id="title"
           name="title"
